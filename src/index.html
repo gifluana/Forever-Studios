@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forever Studios</title>
-    <link rel="stylesheet" href="./styles/reset.css?v=1.1">
-    <link rel="stylesheet" href="./styles/style.css?v=1.1">
+    <link rel="stylesheet" href="./styles/reset.css?v=1.2">
+    <link rel="stylesheet" href="./styles/style.css?v=1.2">
     <link
         rel="shortcut icon"
         href="./img/icon.jpg"
@@ -14,11 +14,11 @@
 </head>
 <body>
     <section class="container">
-        <h1 class="title-1" data-text="Assista a parte 1"></h1>
+        <h1 class="title-1" data-text="Live ON"></h1>
         <div class="twitch-view">
             <div class="twitch-chat">
                 <iframe id="twitch-chat-embed"
-                    src="https://www.twitch.tv/embed/forever/chat?parent=foreverstudios.com.br"
+                    src="https://www.twitch.tv/embed/forever/chat?darkpopout&parent=foreverstudios.com.br"
                     height="500"
                     width="350">
                 </iframe>
@@ -30,7 +30,7 @@
                     new Twitch.Player("twitch-embed", {
                         width: 16*50,
                         height: 9*50,
-                        video: "2011227515",
+                        channel: "forever",
                         parent: "foreverstudios.com.br"
                     });
                 </script>
