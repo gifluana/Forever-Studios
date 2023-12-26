@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Studios</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+        rel="shortcut icon"
+        href="./img/icon.jpg"
+        type="image/x-icon"
+    />
+</head>
+<body>
+    <section class="container">
+        <h1 class="title-1">Assista a <strong class="highlight-text-red">parte 1</strong>:</h1>
+        <div id="twitch-embed"></div>
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+            <script type="text/javascript">
+            new Twitch.Player("twitch-embed", {
+                width: 16*50,
+                height: 9*50,
+                video: "2011227515"
+            });
+            </script>
+        </section>
+
+        <script src="./js/index.js"></script>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">® 2024 ForeverStudios. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

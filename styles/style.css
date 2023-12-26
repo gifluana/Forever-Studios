@@ -1,0 +1,61 @@
+@font-face {
+    font-family: MinecraftSGA;
+    src: url('../font/minecraft-sga.ttf');
+}
+
+@font-face {
+    font-family: MinecraftBold;
+    src: url('../font/minecraft-bold.otf');
+}
+
+:root {
+    --font-sga: 'MinecraftSGA';
+    --font-bold: 'MinecraftBold';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-bold);
+    font-size: 3em;
+    font-weight: 700;
+    background-color: #161616;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.highlight-text-red {
+    text-transform: uppercase;
+}
+
+.highlight-text-red:hover {
+    color: #f03030;
+    text-transform: uppercase;
+    cursor: not-allowed;
+}
+
+.title-1 {
+    margin: 0.75em 0;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    margin: 20px 120px;
+}
+
+.footer__text {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--secondary-gray);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 1em;
+}
