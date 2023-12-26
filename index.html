@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forever Studios</title>
-    <link rel="stylesheet" href="./styles/reset.css?v=3">
-    <link rel="stylesheet" href="./styles/style.css?v=3">
+    <link rel="stylesheet" href="./styles/reset.css?v=1.1">
+    <link rel="stylesheet" href="./styles/style.css?v=1.1">
     <link
         rel="shortcut icon"
         href="./img/icon.jpg"
@@ -14,7 +14,7 @@
 </head>
 <body>
     <section class="container">
-        <h1 class="title-1">Assista a <strong class="highlight-text-red">parte 1</strong>:</h1>
+        <h1 class="title-1" data-text="Assista a parte 1"></h1>
         <div class="twitch-view">
             <div class="twitch-chat">
                 <iframe id="twitch-chat-embed"
@@ -30,13 +30,14 @@
                     new Twitch.Player("twitch-embed", {
                         width: 16*50,
                         height: 9*50,
-                        video: "2011227515"
+                        video: "2011227515",
+                        parent: "foreverstudios.com.br"
                     });
                 </script>
                 </div>
             </div>
         </section>
-        <script src="./js/index.js"></script>
+        <script src="./js/index.js?v=1.1"></script>
     </section>
     <footer class="footer">
         <p class="footer__text">® 2024 ForeverStudios. Todos os direitos reservados.</p>
