@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forever Studios</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css?v=3">
+    <link rel="stylesheet" href="./styles/style.css?v=3">
     <link
         rel="shortcut icon"
         href="./img/icon.jpg"
@@ -15,17 +15,27 @@
 <body>
     <section class="container">
         <h1 class="title-1">Assista a <strong class="highlight-text-red">parte 1</strong>:</h1>
-        <div id="twitch-embed"></div>
-            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-            <script type="text/javascript">
-            new Twitch.Player("twitch-embed", {
-                width: 16*50,
-                height: 9*50,
-                video: "2011227515"
-            });
-            </script>
+        <div class="twitch-view">
+            <div class="twitch-chat">
+                <iframe id="twitch-chat-embed"
+                    src="https://www.twitch.tv/embed/forever/chat?parent=foreverstudios.com.br"
+                    height="500"
+                    width="350">
+                </iframe>
+            </div>
+            <div class="twitch-player">
+                <div id="twitch-embed" ></div>
+                    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                    <script type="text/javascript">
+                    new Twitch.Player("twitch-embed", {
+                        width: 16*50,
+                        height: 9*50,
+                        video: "2011227515"
+                    });
+                </script>
+                </div>
+            </div>
         </section>
-
         <script src="./js/index.js"></script>
     </section>
     <footer class="footer">

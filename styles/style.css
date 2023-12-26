@@ -31,6 +31,19 @@ body {
     height: 100vh;
 }
 
+.twitch-view {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.twitch-player {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
 .highlight-text-red {
     text-transform: uppercase;
 }
