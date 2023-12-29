@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: MinecraftBold;
-    src: url('../font/minecraft-bold.otf');
+    src: url('../font/minecraft-bold-fixed.otf');
 }
 
 :root {
@@ -37,4 +37,8 @@ body {
 
 .text-sga {
     font-family: var(--font-sga);
+}
+
+.text-4 {
+    font-size: 2em;
 }
