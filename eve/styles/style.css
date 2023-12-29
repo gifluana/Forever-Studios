@@ -1,0 +1,40 @@
+@font-face {
+    font-family: MinecraftSGA;
+    src: url('../font/minecraft-sga.ttf');
+}
+
+@font-face {
+    font-family: MinecraftBold;
+    src: url('../font/minecraft-bold.otf');
+}
+
+:root {
+    --font-sga: 'MinecraftSGA';
+    --font-bold: 'MinecraftBold';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-bold);
+    font-size: 3em;
+    font-weight: 700;
+    background-color: #161616;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.text-bold {
+    font-family: var(--font-bold);
+}
+
+.text-sga {
+    font-family: var(--font-sga);
+}
