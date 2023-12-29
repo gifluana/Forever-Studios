@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@v@</title>
-        <link rel="stylesheet" href="./styles/reset.css?v=1.1">
-        <link rel="stylesheet" href="./styles/style.css?v=1.1">
-        <script src="./script.js?v=1.1" defer></script>
-        <link
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Studios</title>
+    <link rel="stylesheet" href="./styles/reset.css?v=1.2">
+    <link rel="stylesheet" href="./styles/style.css?v=1.2">
+    <script src="./js/index.js?v=1.2" defer></script>
+    <link
         rel="shortcut icon"
         href="./img/icon.jpg"
         type="image/x-icon"
-        />
-    </head>
-    <body>
-        <section class="container">
-        <p class="text-1 text-bold" data-text="Olá, você encontrou algo."></p>
-        <p class="text-2 text-bold" data-text="Mas não é o que você procura."></p>
-        <p class="text-3 text-bold" data-text="..."></p>
-        <p class="text-4 text-bold" data-text="@v@"></p>
+    />
+</head>
+<body>
+    <section class="container">
+        <h1 class="title-1" data-text="Assista a Parte FINAL!"></h1>
+        <div class="twitch-view">
+            <div class="twitch-chat">
+                <iframe id="twitch-chat-embed"
+                    src="https://www.twitch.tv/embed/forever/chat?darkpopout&parent=foreverstudios.com.br"
+                    height="500"
+                    width="350">
+                </iframe>
+            </div>
+            <div class="twitch-player">
+                <div id="twitch-embed" ></div>
+                    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                    <script type="text/javascript">
+                    new Twitch.Player("twitch-embed", {
+                        width: 16*50,
+                        height: 9*50,
+                        video: "2016279052",
+                        parent: "foreverstudios.com.br"
+                    });
+                </script>
+                </div>
+            </div>
         </section>
-    </body>
-    </html>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">® 2024 ForeverStudios. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

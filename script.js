@@ -30,13 +30,7 @@ function typeWriter(selector, paramSpeed) {
   });
 }
 
-typeWriter(".text-1", 200);
+typeWriter(".title", 100);
 setTimeout(() => {
-  typeWriter(".text-2", 200);
-}, 6 * 1000);
-setTimeout(() => {
-  typeWriter(".text-3", 1000);
-}, 12 * 1000);
-setTimeout(() => {
-  typeWriter(".text-4", 1000);
-}, 15 * 1000);
+  typeWriter(".subtitle", 100);
+}, 2 * 1000);

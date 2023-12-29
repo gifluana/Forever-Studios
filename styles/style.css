@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: MinecraftBold;
-    src: url('../font/minecraft-bold.otf');
+    src: url('../font/minecraft-bold-fixed.otf');
 }
 
 :root {
@@ -17,8 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--font-bold);
-    font-size: 3em;
-    font-weight: 700;
     background-color: #161616;
     color: #f0f0f0;
 }
@@ -31,44 +29,18 @@ body {
     height: 100vh;
 }
 
-.twitch-view {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
+.text-bold {
+    font-family: var(--font-bold);
 }
 
-.twitch-player {
-    margin: 1em;
-    display: flex;
-    flex-direction: row;
+.text-sga {
+    font-family: var(--font-sga);
 }
 
-.highlight-text-red {
-    text-transform: uppercase;
+.title {
+    font-size: 5em;
 }
 
-.highlight-text-red:hover {
-    color: #f03030;
-    text-transform: uppercase;
-    cursor: not-allowed;
-}
-
-.title-1 {
-    margin: 0.25em 0;
-}
-
-/* Footer */
-
-.footer {
-    text-align: center;
-    margin: 20px 120px;
-}
-
-.footer__text {
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--secondary-gray);
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin-top: 1em;
+.subtitle {
+    font-size: 1.5em;
 }
