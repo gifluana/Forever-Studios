@@ -1,0 +1,30 @@
+:root {
+    --background-color: #060608;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-bold);
+    font-size: 3em;
+    font-weight: 700;
+    background-color: #161616;
+    color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo {
+    width: 50vw;
+    transition: width 0.3s ease-in;
+}
+
+.logo:hover {
+    width: 60vw;
+}
