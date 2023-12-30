@@ -1,4 +1,17 @@
 const notOnFirstPage = sessionStorage.getItem("notOnFirstPage") ?? false;
+const btnShowHideChat = document.querySelector(".show-hide-chat");
+
+btnShowHideChat.addEventListener("click", () => {
+  const chat = document.querySelector(".twitch-chat");
+
+  if (chat.classList.contains("hidden")) {
+    chat.classList.remove("hidden");
+    btnShowHideChat.textContent = "Esconder o Chat";
+  } else {
+    chat.classList.add("hidden");
+    btnShowHideChat.textContent = "Mostrar o Chat";
+  }
+});
 
 /* typer */
 function typeWriter(selector, paramSpeed) {

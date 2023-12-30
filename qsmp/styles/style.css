@@ -13,6 +13,10 @@
     --font-bold: 'MinecraftBold';
 }
 
+.hidden {
+    display: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -29,6 +33,13 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+}
+
+.show-hide-chat {
+    font-size: 0.5em;
+    border: #f0f0f0 1px solid;
+    padding: 0 1em;
+    cursor: pointer;
 }
 
 .twitch-view {
