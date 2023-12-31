@@ -3,15 +3,14 @@
 
  // Define translations for the welcome message
  var translations = {
-     'en-US': 'Welcome to',
-     'fr-FR': 'Bienvenue à',
-     'es-ES': 'Bienvenido a',
+    'en-US': 'Welcome to',
+    'fr-FR': 'Bienvenue à',
+    'es-ES': 'Bienvenido a',
     'pt-BR': 'Bem-vindo à'
-     // Add more translations as needed
  };
 
  // Get the welcome message element
- var welcomeMessageElement = document.getElementById('subtitle');
+ var welcomeMessageElement = document.getElementsByClassName('subtitle');
 
  // Based on the language, change the welcome message
  if (translations[userLang]) {
