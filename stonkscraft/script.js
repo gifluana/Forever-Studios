@@ -4,7 +4,7 @@
  // Define translations for the welcome message
  var translations = {
     'en-US': 'Welcome to',
-    'fr-FR': 'Bienvenue à',
+    'fr': 'Bienvenue à',
     'es-ES': 'Bienvenido a',
     'pt-BR': 'Bem-vindo à'
  };
