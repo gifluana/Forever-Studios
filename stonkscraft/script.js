@@ -10,7 +10,7 @@
  };
 
  // Get the welcome message element
- var welcomeMessageElement = document.getElementsByClassName('subtitle');
+ var welcomeMessageElement = document.getElementById('subtitle');
 
  // Based on the language, change the welcome message
  if (translations[userLang]) {
