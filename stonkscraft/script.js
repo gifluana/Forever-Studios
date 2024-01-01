@@ -1,23 +1,20 @@
- // Get the browser's default language
- var userLang = navigator.language || navigator.userLanguage; 
+function loadTranslation(lang) {
+    fetch('lang/' + lang + '.json')
+        .then(response => response.json())
+        .then(translations => {
+            for (const id in translations) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.textContent = translations[id];
+                }
+            }
+        })
+        .catch(error => console.error('Error loading translation file:', error));
+}
 
- // Define translations for the welcome message
- var translations = {
-    'en-US': 'Welcome to',
-    'fr': 'Bienvenue à',
-    'es-ES': 'Bienvenido a',
-    'pt-BR': 'Bem-vindo à'
- };
+var userLang = navigator.language || navigator.userLanguage; 
+loadTranslation(userLang.split('-')[0]);
 
- // Get the welcome message element
- var welcomeMessageElement = document.getElementById('subtitle');
-
- // Based on the language, change the welcome message
- if (translations[userLang]) {
-     welcomeMessageElement.textContent = translations[userLang];
- } else {
-     welcomeMessageElement.textContent = translations['en-US']; // default to English if no match
- }
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
