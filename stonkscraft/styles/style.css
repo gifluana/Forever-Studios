@@ -3,14 +3,14 @@
     src: url('../font/CORBELB.TTF');
 }
 
+/* Default Styles */
 :root {
-    --background-color: #060608;
+    --background-color: #040407;
     --text-color-white: #f0f0f0;
     --font-albiona: "albiona", sans-serif;
     --font-corbel: 'Corbel', sans-serif;
 }
 
-/* Hidden/Shown Animation */
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -35,6 +35,8 @@ body {
     align-items: center;
 }
 
+/* Main Section Style */
+
 .main-section {
     background: rgb(39,50,90);
     background: linear-gradient(180deg, rgba(39,50,90,1) 0%, rgba(4,4,7,1) 100%);
@@ -48,18 +50,18 @@ body {
     width: 50%;
 }
 
-.title {
+.presentation--title {
     font-family: var(--font-albiona);
     font-size: 6em;
     font-weight: 200;
 }
 
-.subtitle {
+.presentation--subtitle {
     font-family: var(--font-corbel);
     font-size: 3em;
 }
 
-.stonkscity-logo {
+.presentation--stonkscity-logo {
     width: 60%;
     margin-top: 10px;
 }
@@ -70,11 +72,11 @@ body {
         width: 70%; /* Increase width to give more space */
     }
 
-    .subtitle {
+    .presentation--subtitle {
         font-size: 2em; /* Decrease font size even more */
     }
 
-    .title {
+    .presentation--title {
         font-size: 4em; /* Decrease font size even more */
     }
 }
@@ -85,11 +87,18 @@ body {
         width: 90%; /* Increase width even more */
     }
 
-    .subtitle {
+    .presentation--subtitle {
         font-size: 1.5em; /* Decrease font size even more */
     }
 
-    .title {
+    .presentation--title {
         font-size: 3em; /* Decrease font size even more */
     }
+}
+
+/* About Section */
+
+.about {
+    background-color: var(--background-color);
+    font-family: var(--font-corbel);
 }
